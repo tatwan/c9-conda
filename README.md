@@ -27,6 +27,22 @@ chmod a+x Miniconda3-latest-Linux-x86_64.sh
 ### Install packages
 ```
 conda install numpy
+```
+You may be promopted
+```
+The following NEW packages will be INSTALLED:
+
+    pandas:          0.18.1-np111py27_0
+    python-dateutil: 2.5.3-py27_0      
+    pytz:            2016.4-py27_0     
+    six:             1.10.0-py27_0     
+
+Proceed ([y]/n)? 
+```
+Just type **y** and hit enter.
+
+Install other packages similarly.
+```
 conda install pandas
 conda install matplotlib
 ```
