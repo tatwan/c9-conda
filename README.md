@@ -16,12 +16,12 @@ wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 
 3.Changing file permission for execution
 ```
-chmod a+x Miniconda3-latest-Linux-x86_64.sh
+chmod a+x Miniconda2-latest-Linux-x86_64.sh
 ```
 
 4.Installing Miniconda
 ```
-./Miniconda3-latest-Linux-x86_64.sh
+./Miniconda2-latest-Linux-x86_64.sh
 ```
 5. Before installing packages. Close the current c9 bash terminal. Open a new terminal.
 ### Install packages
