@@ -78,19 +78,12 @@ conda install ipython-notebook
 conda install ipython
 ```
 
-To open iPython Notebook we need to make changes to the default configurations. Mainly IP from c.NotebookApp.ip = 'Localhost' to **c.NotebookApp.ip = '*'**, and from the default port 8888 to the ports allowed within c9 (8080, 8081, 8082).
-
-To do so, **first** generate the jupyter_notebook_config.py
+To run iPython notebook in c9 run:
 ```
-jupyter notebook --generate-config
+jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 ```
 
-Then edit the file
-```
-vi /home/ubuntu/.jupyter/jupyter_notebook_config.py
-```
-
-Scroll down until you see the IP section, to be able to edit press **i** then uncomment and make the change from localhost to your address. Once done, press **ESC**, then **:wq** to write and quit.
+Then open your browser using port 8080 for example. 
 
 
 [Thanks to this Stackoverflow post](http://stackoverflow.com/questions/31598883/installing-python-module-pandas-in-cloud9)
