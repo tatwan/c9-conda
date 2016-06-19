@@ -66,3 +66,8 @@ ImportError: No module named matplotlib
 if you do, then you need to make sure you install the package correclty using conda.
 
 [Thanks to this Stackoverflow post](http://stackoverflow.com/questions/31598883/installing-python-module-pandas-in-cloud9)
+
+## Note: If you are interested in installing OpenCV, Conda makes it very easy to install
+```
+conda install opencv
+```
