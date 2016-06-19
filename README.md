@@ -1,5 +1,5 @@
 # How to install Python NumPy, Pandas and Matplotlib on Cloud 9
-Python v2.7
+Instructions below are for Python v2.7 Minconda 2. For Python 3.x just replace Miniconda2 with Miniconda3
 
 Check python version on c9 terminal.
 ```
