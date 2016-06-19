@@ -24,7 +24,9 @@ chmod a+x Miniconda2-latest-Linux-x86_64.sh
 ./Miniconda2-latest-Linux-x86_64.sh
 ```
 5. Before installing packages. Close the current c9 bash terminal. Open a new terminal.
+
 ### Install packages
+
 ```
 conda install numpy
 ```
