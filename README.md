@@ -65,9 +65,30 @@ ImportError: No module named matplotlib
 ```
 if you do, then you need to make sure you install the package correclty using conda.
 
-[Thanks to this Stackoverflow post](http://stackoverflow.com/questions/31598883/installing-python-module-pandas-in-cloud9)
-
 ## Note: If you are interested in installing OpenCV, Conda makes it very easy to install
 ```
 conda install opencv
 ```
+
+### Install iPython & iPython Notebook
+```
+conda install ipython-notebook
+conda install ipython
+```
+
+To open iPython Notebook we need to make changes to the default configurations. Mainly IP from c.NotebookApp.ip = 'Localhost' to **c.NotebookApp.ip = '*'**, and from the default port 8888 to the ports allowed within c9 (8080, 8081, 8082).
+
+To do so, **first** generate the jupyter_notebook_config.py
+```
+jupyter notebook --generate-config
+```
+
+Then edit the file
+```
+vi /home/ubuntu/.jupyter/jupyter_notebook_config.py
+```
+
+Scroll down until you see the IP section, to be able to edit press **i** then uncomment and make the change from localhost to your address. Once done, press **ESC**, then **:wq** to write and quit.
+
+
+[Thanks to this Stackoverflow post](http://stackoverflow.com/questions/31598883/installing-python-module-pandas-in-cloud9)
