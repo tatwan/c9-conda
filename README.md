@@ -28,12 +28,14 @@ chmod a+x Miniconda2-latest-Linux-x86_64.sh
 
 If you ran into an error like `bunzip2: not found`, the easiest way is to manually install it via `apt-get install bzip2`. 
 
+If during the install you got interrupted, then when you rerun the just `-u` for update as in `./Miniconda2-latest-Linux-x86_64.sh -u`. You will be prompted to, type `yes` and hit enter.
+
 5. Before installing packages. Close the current bash terminal and open a new terminal (either on c9 or docker container). 
 
 ### Install packages
 
 ```
-conda install numpy
+conda install -y numpy
 ```
 You may be promopted
 ```
@@ -44,14 +46,11 @@ The following NEW packages will be INSTALLED:
     pytz:            2016.4-py27_0     
     six:             1.10.0-py27_0     
 
-Proceed ([y]/n)? 
 ```
-Just type **y** and hit enter.
 
 Install other packages similarly.
 ```
-conda install pandas
-conda install matplotlib
+conda install -y pandas matplotlib 
 ```
 In the terminal type Python you should see something like this:
 ```
