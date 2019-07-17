@@ -1,5 +1,5 @@
-# How to install NumPy, Pandas and Matplotlib on Cloud 9 (and other packages)
-Instructions below are for Python v2.7 Minconda 2. For Python 3.x just replace Miniconda2 with Miniconda3
+# How to install Jupyter, NumPy, Pandas and Matplotlib on Cloud 9 or Docker Container
+Instructions below are for Python v2.7 Minconda 2. For Python 3.x just replace Miniconda2 with Miniconda3 anywhere you see it below.
 
 Check python version on c9 terminal.
 ```
@@ -14,6 +14,8 @@ python -V
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 ```
 
+If `wget` command was not recognized you may need to install it using `apt-get update && apt-get install wget`
+
 3.Changing file permission for execution
 ```
 chmod a+x Miniconda2-latest-Linux-x86_64.sh
@@ -23,7 +25,10 @@ chmod a+x Miniconda2-latest-Linux-x86_64.sh
 ```
 ./Miniconda2-latest-Linux-x86_64.sh
 ```
-5. Before installing packages. Close the current c9 bash terminal. Open a new terminal.
+
+If you ran into an error like `bunzip2: not found`, the easiest way is to manually install it via `apt-get install bzip2`. 
+
+5. Before installing packages. Close the current bash terminal and open a new terminal (either on c9 or docker container). 
 
 ### Install packages
 
@@ -72,13 +77,12 @@ if you do, then you need to make sure you install the package correclty using co
 conda install opencv
 ```
 
-### Install iPython & iPython Notebook
+### Install Jupyter
 ```
-conda install ipython-notebook
-conda install ipython
+conda install jupyter
 ```
 
-To run iPython notebook in c9 run:
+To run Jupyter notebook in c9 run:
 ```
 jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 ```
